@@ -1,1 +1,33 @@
 /* Start coding here */
+/* style.css */
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.item {
+  background-color: rgb(255, 167, 94);
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  width: 200px;
+}
+
+/* Media Query for Responsive Design */
+@media screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .item {
+    width: 100%;
+  }
+}
